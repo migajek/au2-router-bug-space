@@ -1,0 +1,7 @@
+<h2>Location list</h2>
+
+<ul>
+  <li repeat.for="location of locations">
+    <a load="route: ../view; params.bind: {id: location[1]}">${location[0]}</a>
+  </li>
+</ul>

@@ -1,0 +1,6 @@
+<h2>Device list</h2>
+<ul>
+  <li repeat.for="link of links">
+    <a load="route: ../device; params.bind: {id: link[1]}">${link[0]}</a>
+  </li>
+</ul>

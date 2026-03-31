@@ -1,0 +1,10 @@
+<h3>Location ${location}</h3>
+
+<p>
+  This location ${isProblematicLocation ? 'contains' : 'doesnt contain'} space in the ID
+</p>
+<p if.bind="isProblematicLocation">
+  Since this is nested router, the space in the ID will break the router.
+You can refresh the page (hit F5) and observe the URL bar of the browser changing.
+Subsequent reload of page (f5) or opening the page in a new tab will not work.
+</p>
