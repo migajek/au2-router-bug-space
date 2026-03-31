@@ -1,19 +1,3 @@
 # au2-router-space-bug-demo
 
-This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
-
-## Quick start
-
-    npm install
-    npm start
-
-
-## Start dev web server
-
-    npm start
-
-## Build the app in production mode
-
-    npm run build
-
-
+See the demo live here https://migajek.github.io/au2-router-bug-space/
