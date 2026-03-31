@@ -1,6 +1,17 @@
-<div id="navbar">
-<a load="device-list">Devices</a>
-<a load="locations">Locations</a>
-</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" load="device-list">Router Demo</a>
+    <div class="navbar-nav">
+      <a class="nav-link" load="device-list">Devices</a>
+      <a class="nav-link" load="locations">Locations</a>
+    </div>
+  </div>
+</nav>
 
-<au-viewport></au-viewport>
+<main class="container pb-4">
+  <div class="alert alert-info py-2" role="alert">
+    See the actual issue here:
+    <a class="alert-link" href="/locations/location/second%20location">Locations -> Location 2</a>
+  </div>
+  <au-viewport></au-viewport>
+</main>

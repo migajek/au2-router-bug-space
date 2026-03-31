@@ -1,8 +1,13 @@
-<h3>Device  ${device}</h3>
+<section class="card border-success-subtle shadow-sm">
+  <div class="card-body">
+    <h3 class="h5 mb-3">Device <span class="text-success">${device}</span></h3>
 
-
-<p>
-  This device ${isProblematicDevice ? 'contains' : 'doesnt contain'} space in the ID
-<br>
-  Since this is top-level (root) router, nothing will break regardless of the space in the ID.
-You can refresh the page and observe the URL bar of the browser not changing.</p>
+    <p class="lead mb-2">
+      This device ${isProblematicDevice ? 'contains' : 'doesnt contain'} a space in the ID.
+    </p>
+    <p class="text-body-secondary mb-0">
+      Since this is the top-level (root) router, nothing breaks regardless of spaces in the ID.
+      You can press <kbd>F5</kbd> and observe the URL bar staying stable.
+    </p>
+  </div>
+</section>

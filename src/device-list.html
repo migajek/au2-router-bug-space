@@ -1,6 +1,13 @@
-<h2>Device list</h2>
-<ul>
-  <li repeat.for="link of links">
-    <a load="route: ../device; params.bind: {id: link[1]}">${link[0]}</a>
-  </li>
-</ul>
+<section class="card shadow-sm">
+  <div class="card-body">
+    <h2 class="h4 mb-3">Device list</h2>
+
+    <ul class="list-group">
+      <li class="list-group-item" repeat.for="link of links">
+        <a class="text-decoration-none" load="route: ../device; params.bind: {id: link[1]}">
+          ${link[0]}
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

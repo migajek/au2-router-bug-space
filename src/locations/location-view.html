@@ -1,10 +1,18 @@
-<h3>Location ${location}</h3>
+<div class="mb-3">
+  <h3 class="h5 mb-0">Location <span class="text-primary">${location}</span></h3>
+</div>
 
-<p>
-  This location ${isProblematicLocation ? 'contains' : 'doesnt contain'} space in the ID
+<p class="lead mb-2">
+  This location ${isProblematicLocation ? 'contains' : 'doesnt contain'} a space in the ID.
 </p>
-<p if.bind="isProblematicLocation">
-  Since this is nested router, the space in the ID will break the router.
-You can refresh the page (hit F5) and observe the URL bar of the browser changing.
-Subsequent reload of page (f5) or opening the page in a new tab will not work.
-</p>
+
+<div if.bind="isProblematicLocation" class="alert alert-warning mb-0" role="alert">
+  <p class="mb-2">
+    Since this is a nested router, a space in the route segment (eg. <kbd>/locations/second%20location</kbd>) will break routing behavior - refreshing the page 
+    appends an entire route to the current one.
+  </p>
+  <p class="mb-0">
+    Press <kbd>F5</kbd> and watch the URL bar change. A subsequent <kbd>F5</kbd> or opening the same URL
+    in a new tab will fail.
+  </p>
+</div>
